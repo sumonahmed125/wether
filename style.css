@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background: #201923;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .card-body {
+    background: linear-gradient(#5f2c82, #49a09d);
+    padding: 2rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+  }
+  .search {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+  }
+  
+  .search input {
+    border: none;
+    outline: none;
+    background: #fff;
+    color: #333;
+    padding: 1rem;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    flex: 1;
+    font-size: 18px;
+  }
+  .search-button {
+    width: 120px;
+    padding: 1rem;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: #49a09d;
+  }
+  .search-button:hover {
+    background: #fff;
+    color: #49a09d;
+    border: 1px solid #49a09d;
+  }
+  .weather {
+    display: none;
+  }
+  .weather.weatherShow {
+    display: block;
+  }
+  .weather-icon {
+    width: 200px;
+    height: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .weather h1 {
+    font-size: 80px;
+    font-weight: 500;
+  }
+  .weather h2 {
+    font-size: 45px;
+    font-weight: 400;
+  }
+  .details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 80px;
+  }
+  .detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+  }
+  .details img {
+    width: 40px;
+    margin-right: 10px;
+  }
+  
+  .humidity,
+  .wind {
+    font-size: 28px;
+    margin-top: -10px;
+  }
+  .error {
+    background: rgba(234, 173, 183, 0.832);
+    color: tomato;
+    border: 1px solid tomato;
+    text-wrap: 600;
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 1rem;
+    display: none;
+  }
+  
+  .error.errorShow {
+    display: block;
+  }
+  
+  
